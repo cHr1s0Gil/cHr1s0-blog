@@ -2,13 +2,17 @@
   "name": "github-spa",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://Chriso004.github.io/chr1s0-portfolio",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
+    "predeploy": "npm run build",
+    "deploy": "touch out/.nojekyll && gh-pages -d out --dotfiles",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "gh-pages": "^6.1.0",
     "next": "^14.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
