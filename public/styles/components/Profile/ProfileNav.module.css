@@ -1,0 +1,28 @@
+.profileNavContainer {
+    width: 100%;
+    height: 10%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.profileNavContainer div {
+    width: 25%;
+    height: 100%;
+}
+
+.githubContainer {
+    background-color: rgba(0, 0, 0, 0.377);
+}
+
+.velogContainer {
+    background-color: rgb(5, 156, 5);
+}
+
+.instagramContainer {
+    background-color: lightpink;
+}
+
+.mailContainer {
+    background-color: black;
+}
