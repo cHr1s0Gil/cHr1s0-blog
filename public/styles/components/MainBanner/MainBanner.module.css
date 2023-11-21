@@ -14,6 +14,18 @@
     bottom: 0;
     left: 0;
     background-size: cover;
-    filter: blur(6px);
-    opacity: 0.3;
+    filter: blur(8px);
+    opacity: 0.2;
+}
+
+.bannerImage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(141, 10, 75);
+    /* 하늘색 배경 추가 */
+    opacity: 0.6;
 }

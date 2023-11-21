@@ -1,11 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
 .profileContainer {
     width: 30%;
-    height: 30vh;
-    background-color: white;
+    height: 100vh;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileThumbContainer {
+    width: 45%;
+    display: block;
+}
+
+.profileThumbContainer::after {
+    display: block;
+    content: "";
+    padding-bottom: 100%;
+}
+
+.profileTempImage {
+    background-color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profileInfoContainer {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileInfoContainer div {
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.profileName {
+    font-family: 'Nanum Pen Script', cursive;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.profileSub {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 24px;
+}
+
+.profileNavContainer {
+    width: 100%;
+    height: 10%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.profileNavContainer div {
+    width: 25%;
+    height: 100%;
+}
+
+.githubContainer {
+    background-color: rgba(0, 0, 0, 0.377);
+}
+
+.velogContainer {
+    background-color: rgb(5, 156, 5);
+}
+
+.instagramContainer {
+    background-color: lightpink;
+}
+
+.mailContainer {
+    background-color: black;
 }

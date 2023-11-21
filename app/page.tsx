@@ -1,7 +1,7 @@
 import MainBanner from "components/MainBanner";
 
 import styles from "styles/pages/home.module.css";
-import ProfileInfo from "./components/ProfileInfo";
+import ProfileInfo from "./components/Profile";
 
 export default function Home() {
   return (
