@@ -2,7 +2,7 @@
   "name": "github-spa",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://cHr1s0326.github.io/",
+  "homepage": "http://cHr1s0326.github.io/cHr1s0-blog",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
