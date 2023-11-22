@@ -11,7 +11,7 @@ import infoStyles from "styles/components/Profile/ProfileInfo.module.css";
 import pathConfig from "../../next.config";
 
 // fontawesome
-import { config } from '@fortawesome/fontawesome-svg-core'
+import { IconDefinition, config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faSquareInstagram, faVimeo } from "@fortawesome/free-brands-svg-icons";
@@ -48,31 +48,41 @@ export default function ProfileInfo(): JSX.Element {
                 </div>
             </div>
             <div className={navStyles.profileNavContainer}>
-                <Link className={navStyles.linkContainer} href={"https://github.com/cHr1s0326"} target="_blank">
+                <Link className={navStyles.linkContainer} href={""} target="_blank">
                     <div className={navStyles.githubContainer}>
                         <FontAwesomeIcon icon={faGithub} size="3x" />
                     </div>
                 </Link>
-                <Link className={navStyles.linkContainer} href={"https://velog.io/@chr1s0"} target="_blank">
+                <Link className={navStyles.linkContainer} href={""} target="_blank">
                     <div className={navStyles.velogContainer}>
                         <FontAwesomeIcon icon={faVimeo} size="3x" />
                     </div>
                 </Link>
-                <Link className={navStyles.linkContainer} href={"https://www.instagram.com/ch_r1s0/"} target="_blank">
-                <div className={navStyles.instagramContainer}>
-                    <FontAwesomeIcon icon={faSquareInstagram} size="3x" />
-                </div>
-            </Link>
-            <Link className={navStyles.linkContainer} href={"mailto:qudcksrlf1@gmail.com"}>
-                <div className={navStyles.mailContainer}>
-                    <FontAwesomeIcon icon={faEnvelope} size="3x" />
-                </div>
-            </Link>
+                <Link className={navStyles.linkContainer} href={""} target="_blank">
+                    <div className={navStyles.instagramContainer}>
+                        <FontAwesomeIcon icon={faSquareInstagram} size="3x" />
+                    </div>
+                </Link>
+                <Link className={navStyles.linkContainer} href={""}>
+                    <div className={navStyles.mailContainer}>
+                        <FontAwesomeIcon icon={faEnvelope} size="3x" />
+                    </div>
+                </Link>
             </div>
         </div>
     )
 }
 
 function getData(): string {
+    const href: string[] = [
+        "https://github.com/cHr1s0326", 
+        "https://velog.io/@chr1s0", 
+        "https://www.instagram.com/ch_r1s0/", 
+        "mailto:qudcksrlf1@gmail.com"
+    ];
+    const target: boolean[] = [true, true, true, false];
+    const className: string[] = ["githubContainer", "velogContainer", "instagramContainer", "mailContainer"];
+    const icon: IconDefinition[] = [faGithub, faVimeo, faSquareInstagram, faEnvelope];
+
     return pathConfig.basePath;
 }
