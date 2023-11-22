@@ -1,12 +1,16 @@
+// module
 import Image from "next/image";
 
+// stylesheet
 import styles from "styles/components/Profile/Profile.module.css";
 import thumbStyles from "styles/components/Profile/ProfileThumb.module.css";
 import navStyles from "styles/components/Profile/ProfileNav.module.css";
 import infoStyles from "styles/components/Profile/ProfileInfo.module.css";
 
+// config
 import pathConfig from "../../next.config";
 
+// fontawesome
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -15,8 +19,8 @@ import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import Link from "next/link";
 config.autoAddCss = false
 
-export default function ProfileInfo() {
-    const imagePath = pathConfig.basePath;
+export default function ProfileInfo(): JSX.Element {
+    const imagePath: string = getData();
 
     return (
         <div className={styles.profileContainer}>
@@ -67,4 +71,8 @@ export default function ProfileInfo() {
             </div>
         </div>
     )
+}
+
+function getData(): string {
+    return pathConfig.basePath;
 }
