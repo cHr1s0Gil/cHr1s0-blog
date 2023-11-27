@@ -3,6 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import '@fortawesome/fontawesome-svg-core/styles.css';
 
 import styles from "styles/components/About/About.module.css";
+import titleStyles from "styles/components/About/AboutTitle.module.css";
+import navStyles from "styles/components/About/AboutNav.module.css";
+import contentStyles from "styles/components/About/AboutContent.module.css";
 import { IAboutData } from "interfaces/about/About";
 
 
@@ -14,22 +17,22 @@ export default function About(): JSX.Element {
         <div className={styles.aboutMe}>
             <div className={styles.aboutContainer}>
                 <div className={styles.aboutContent}>
-                    <div className={styles.titleContainer}>
-                        <span className={styles.title}>About Me</span>
+                    <div className={titleStyles.titleContainer}>
+                        <span className={titleStyles.title}>About Me</span>
                     </div>
-                    <div className={styles.aboutNav}>
+                    <div className={navStyles.aboutNav}>
                         {
                             icon.map((value: IconDefinition, index: number) => (
-                                <div className={styles.aboutNavContent} key={index}>
-                                    <div className={styles.contentIcon}>
+                                <div className={contentStyles.aboutNavContent} key={index}>
+                                    <div className={contentStyles.contentIcon}>
                                         <FontAwesomeIcon icon={value} size="2x" />
                                     </div>
                                     {/* 정보 추가 */}
-                                    <div className={styles.contentContainer}>
-                                        <div className={styles.contentLabel}>
+                                    <div className={contentStyles.contentContainer}>
+                                        <div className={contentStyles.contentLabel}>
                                             {label[index]}
                                         </div>
-                                        <div className={styles.contentValue}>
+                                        <div className={contentStyles.contentValue}>
                                             {content[index]}
                                         </div>
                                     </div>
