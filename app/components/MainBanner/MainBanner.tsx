@@ -1,13 +1,11 @@
 // components
-import ProfileInfo from "components/Profile";
+import ProfileInfo from "@/app/components/Profile/Profile";
 
 // stylesheet
 import styles from "styles/components/MainBanner/MainBanner.module.css";
 
 // config
-import config from "../../next.config";
-
-
+import config from "../../../next.config";
 
 export default function MainBanner(): JSX.Element {
     const imagePath: string = getData();

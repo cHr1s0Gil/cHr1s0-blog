@@ -1,11 +1,15 @@
-import { IconDefinition, faCakeCandles, faEnvelope, faLocationDot, faPen, faPhone, faUser } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import '@fortawesome/fontawesome-svg-core/styles.css';
-
+// styles
 import styles from "styles/components/About/About.module.css";
 import titleStyles from "styles/components/About/AboutTitle.module.css";
 import navStyles from "styles/components/About/AboutNav.module.css";
 import contentStyles from "styles/components/About/AboutContent.module.css";
+
+// fontawesome
+import { IconDefinition, faCakeCandles, faEnvelope, faLocationDot, faPen, faPhone, faUser } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import '@fortawesome/fontawesome-svg-core/styles.css';
+
+// types
 import { IAboutData } from "interfaces/about/About";
 
 

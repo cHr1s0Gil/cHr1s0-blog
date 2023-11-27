@@ -1,0 +1,27 @@
+.projects {
+    width: 100%;
+    height: 70vh;
+}
+
+.projectsContainer {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+}
+
+.titleContainer {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectsNav {
+    width: 100%;
+    height: 80%;
+}
+
+.contentContainer {
+    background-color: aquamarine;
+}
