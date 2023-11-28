@@ -1,5 +1,6 @@
 // module
 import Image from "next/image";
+import Link from "next/link";
 
 // stylesheet
 import styles from "styles/components/Profile/Profile.module.css";
@@ -16,9 +17,9 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faSquareInstagram, faVimeo } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import Link from "next/link";
+
+// types
 import { IProfileData } from "interfaces/Profile/Profile";
-config.autoAddCss = false
 
 export default function ProfileInfo(): JSX.Element {
     const data: IProfileData = getData();

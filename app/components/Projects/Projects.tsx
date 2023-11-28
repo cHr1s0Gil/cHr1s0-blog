@@ -1,14 +1,34 @@
+"use client";
+
+// modules
+import { Dispatch, SetStateAction, useState } from "react";
 import Image from "next/image";
 
+// components
+import Modal from "components/Modal/Modal";
+
+// stylesheet
 import styles from "styles/components/Projects/Projects.module.css";
 import titleStyles from "styles/components/Projects/ProjectsTitle.module.css";
 import navStyles from "styles/components/Projects/ProjectsNav.module.css";
 import contentStyles from "styles/components/Projects/ProjectsContent.module.css";
-import Link from "next/link";
 
 export default function Projects(): JSX.Element {
+    const [isOpenModal, setIsOpenModal]: [boolean, Dispatch<SetStateAction<boolean>>] = useState<boolean>(false);
+    const [modalIndex, setModalIndex]: [number | null, Dispatch<SetStateAction<number | null>>] = useState<number | null>(null);
+
     const data: IProjectsData = getData();
     const { title, thumbImage }: IProjectsData = data;
+
+    const openModal: (index: number) => void = (index: number) => {
+        setIsOpenModal(true);
+        setModalIndex(index);
+    };
+
+    const closeModal: () => void = () => {
+        setIsOpenModal(false);
+        setModalIndex(null);
+    }
 
     return (
         <div className={styles.projects}>
@@ -32,16 +52,15 @@ export default function Projects(): JSX.Element {
                                         height={thumbImage[index].height}>
                                     </Image>
                                 </div>
-                                <Link href="#">
-                                    <div className={contentStyles.contentDetail}>
-                                        <span className={contentStyles.detailText}>자세히 보기</span>
-                                    </div>
-                                </Link>
+                                <div className={contentStyles.contentDetail} onClick={() => openModal(index)}>
+                                    <span className={contentStyles.detailText}>자세히 보기</span>
+                                </div>
                             </div>
                         ))
                     }
                 </div>
             </div>
+            {isOpenModal && <Modal props={{ index: modalIndex, onClose: closeModal }}></Modal>}
         </div>
     )
 }
