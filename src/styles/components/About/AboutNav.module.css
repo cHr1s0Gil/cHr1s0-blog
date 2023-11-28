@@ -1,7 +1,7 @@
 .aboutNav {
-    width: 90%;
-    height: 60%;
+    width: 95%;
+    height: 65%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+    grid-gap: 15px;
 }

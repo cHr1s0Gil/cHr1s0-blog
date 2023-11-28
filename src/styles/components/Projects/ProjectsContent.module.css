@@ -1,0 +1,46 @@
+.contentContainer {
+    border: 1px black solid;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 10px 10px 15px rgba(29, 32, 3, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.contentContainer:hover {
+    transform: scale(1.15);
+    z-index: 1;
+}
+
+.contentTitle, .contentDetail {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.contentTitle {
+    border-bottom: 1px black solid;
+}
+
+.contentDetail {
+    border-top: 1px black solid;
+}
+
+.contentBody {
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentImage {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
