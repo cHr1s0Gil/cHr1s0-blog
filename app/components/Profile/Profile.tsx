@@ -18,9 +18,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faSquareInstagram, faVimeo } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
-// types
-import { IProfileData } from "interfaces/Profile/Profile";
-
 export default function ProfileInfo(): JSX.Element {
     const data: IProfileData = getData();
     const { href, target, className, icon, basePath }: IProfileData = data;

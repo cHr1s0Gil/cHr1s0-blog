@@ -9,9 +9,6 @@ import { IconDefinition, faCakeCandles, faEnvelope, faLocationDot, faPen, faPhon
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import '@fortawesome/fontawesome-svg-core/styles.css';
 
-// types
-import { IAboutData } from "interfaces/About/About";
-
 export default function About(): JSX.Element {
     const data: IAboutData = getData();
     const { icon, label, content }: IAboutData = data;
