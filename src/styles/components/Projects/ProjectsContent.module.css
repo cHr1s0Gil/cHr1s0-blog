@@ -13,7 +13,7 @@
 
 .contentTitle, .contentDetail {
     width: 100%;
-    height: 15%;
+    height: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,7 +30,7 @@
 
 .contentBody {
     width: 100%;
-    height: 70%;
+    height: 60%;
     overflow: hidden;
     display: flex;
     justify-content: center;
