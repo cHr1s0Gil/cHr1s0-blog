@@ -25,8 +25,7 @@ export default function ImageSlider() {
                 {images.map((value: number, index: number) => (
                     <Image
                         key={index}
-                        className={styles.image}
-                        // className={`${styles.image} ${value === currentIndex + 1 ? styles.active : ''}`}
+                        className={`${styles.image} ${value === currentIndex + 1 ? styles.active : ''}`}
                         src={`static/images/test/image_${value}.png`}
                         alt={`이미지 ${index}`}
                         width={1920}
@@ -35,7 +34,7 @@ export default function ImageSlider() {
                     </Image>
                 ))}
             </div>
-            <div className={styles.slideBtnContainer}>
+            <div className={styles.sliderBtnContainer}>
                 <div className={styles.prevBtn} onClick={prevSlide}>{"<"}</div>
                 <span className={styles.pagination}>{currentIndex + 1}/{IMAGE_SIZE}</span>
                 <div className={styles.nextBtn} onClick={nextSlide}>{">"}</div>
