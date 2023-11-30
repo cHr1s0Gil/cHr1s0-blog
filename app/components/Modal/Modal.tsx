@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -7,9 +5,13 @@ import styles from "styles/components/Modal/Modal.module.css";
 import headerStyles from "styles/components/Modal/ModalHeader.module.css";
 import contentStyles from "styles/components/Modal/ModalContent.module.css";
 import ImageSlider from "./ImageSlider";
+import Description from "./Description";
+
+import { contentData } from "src/content/projects/content";
 
 export default function Modal({ props }: { props: IModalProps }) {
     const { index, onClose }: IModalProps = props;
+    const data: IModalContentData = getData(index);
 
     const onModalClick = (event: React.MouseEvent<HTMLDivElement>) => {
         const modal: Element | null = document.querySelector(".modalContainer");
@@ -22,7 +24,7 @@ export default function Modal({ props }: { props: IModalProps }) {
         <div className={`${styles.modalContainer} modalContainer`} onClick={onModalClick}>
             <div className={styles.modalContent}>
                 <div className={headerStyles.titleContainer}>
-                    <span className={headerStyles.title}>Title</span>
+                    <span className={headerStyles.title}>{data.title}</span>
                     <div className={headerStyles.closeContainer}>
                         <div className={headerStyles.closeBtn} onClick={onClose}>
                             <FontAwesomeIcon icon={faCircleXmark} size="3x" />
@@ -30,14 +32,18 @@ export default function Modal({ props }: { props: IModalProps }) {
                     </div>
                 </div>
                 <div className={headerStyles.subTitleContainer}>
-                    <span className={headerStyles.subTitle}>subTitle</span>
+                    <span className={headerStyles.subTitle}>{data.subTitle}</span>
                 </div>
                 <div className={contentStyles.modalContentContainer}>
-                    <ImageSlider></ImageSlider>
-                    <div className={contentStyles.descriptionContainer}>
-                    </div>
+                    <ImageSlider props={data.images}></ImageSlider>
+                    <Description props={data.description}></Description>
                 </div>
             </div>
         </div>
     )
+}
+
+function getData(index: number | null): IModalContentData {
+    const data: IModalContentData = contentData[index!!];
+    return data;
 }

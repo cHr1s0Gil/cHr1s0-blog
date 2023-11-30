@@ -4,10 +4,9 @@ import { Dispatch, RefObject, SetStateAction, useEffect, useRef, useState } from
 
 import styles from "styles/components/Modal/ImageSlider.module.css";
 
-export default function ImageSlider() {
-    const IMAGE_SIZE: number = 5;
+export default function ImageSlider({ props }: { props: IImageData[] }) {
+    const IMAGE_SIZE: number = props.length;
     const images: number[] = Array.from({ length: IMAGE_SIZE }, (v: unknown, index: number) => index + 1);
-
     const sliderRef: RefObject<HTMLDivElement> = useRef<HTMLDivElement>(null);
     const [currentIndex, setCurrentIndex]: [number, Dispatch<SetStateAction<number>>] = useState<number>(0);
 
@@ -26,11 +25,11 @@ export default function ImageSlider() {
                     <Image
                         key={index}
                         className={`${styles.image} ${value === currentIndex + 1 ? styles.active : ''}`}
-                        src={`static/images/test/image_${value}.png`}
+                        src={props[index].src}
                         alt={`이미지 ${index}`}
                         width={1920}
                         height={1080}
-                        >
+                    >
                     </Image>
                 ))}
             </div>

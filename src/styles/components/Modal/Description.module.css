@@ -1,0 +1,22 @@
+.descriptionContainer {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentContainer {
+    width: 90%;
+    height: 90%;
+}
+
+.mainDescription {
+    width: 100%;
+    height: 60%;
+}
+
+.informationContainer {
+    width: 100%;
+    height: 50%;
+}
