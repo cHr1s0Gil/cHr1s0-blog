@@ -1,54 +1,35 @@
 .skillsContainer {
     width: 100%;
-    background-color: black;
+    height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(255, 166, 0, 0.6);
 }
 
 .skillsContent {
-    width: 85%;
-    background-color: orange;
+    width: 70%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contentTitleContainer {
+    width: 80%;
+    height: 10%;
+    text-align: center;
+}
+
+.contentTitle {
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.skillsListContainer {
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-}
-
-.skillsList {
-    width: 20%;
-    border-radius: 15px;
-    position: relative;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.titleContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid black;
-    width: 80%;
-    margin: auto;
-}
-
-.titleText {
-    font-size: 1.5em;
-    padding: 15px;
-    background-color: whi;
-}
-
-.logoContainer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.logoImage {
-    width: 90%;
-    height: auto;
-    object-fit: contain;
 }
