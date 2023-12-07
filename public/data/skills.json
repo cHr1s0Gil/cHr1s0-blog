@@ -1,0 +1,101 @@
+{
+    "frontend": {
+        "title": "frontend",
+        "imageData": [
+            {
+                "src": "static/images/Skills/frontend/html.png",
+                "width": 1920,
+                "height": 1080
+            },
+            {
+                "src": "static/images/Skills/frontend/react.svg",
+                "width": 1920,
+                "height": 1080
+            },
+            {
+                "src": "static/images/Skills/frontend/ts.svg",
+                "width": 1920,
+                "height": 1080
+            },
+            {
+                "src": "static/images/Skills/frontend/nextjs.svg",
+                "width": 1920,
+                "height": 1080
+            }
+        ],
+        "alt": [
+            "html logo",
+            "react logo",
+            "ts logo",
+            "nextjs logo"
+        ]
+    },
+    "backend": {
+        "title": "backend",
+        "imageData": [
+            {
+                "src": "static/images/Skills/backend/javascript.jpg",
+                "width": 256,
+                "height": 256
+            },
+            {
+                "src": "static/images/Skills/backend/nodejs.png",
+                "width": 1920,
+                "height": 1080
+            },
+            {
+                "src": "static/images/Skills/backend/express.svg",
+                "width": 1920,
+                "height": 1080
+            },
+            {
+                "src": "static/images/Skills/backend/spring.svg",
+                "width": 1920,
+                "height": 1080
+            },
+            {
+                "src": "static/images/Skills/backend/java.png",
+                "width": 1920,
+                "height": 1080
+            },
+            {
+                "src": "static/images/Skills/backend/postman.svg",
+                "width": 1920,
+                "height": 1080
+            }
+        ],
+        "alt": [
+            "javascript logo",
+            "nodejs logo",
+            "express logo",
+            "spring logo",
+            "java logo",
+            "postman logo"
+        ]
+    },
+    "deploy": {
+        "title": "deploy",
+        "imageData": [
+            {
+                "src": "static/images/Skills/deploy/aws.svg",
+                "width": 1920,
+                "height": 1080
+            },
+            {
+                "src": "static/images/Skills/deploy/heroku.svg",
+                "width": 1920,
+                "height": 1080
+            },
+            {
+                "src": "static/images/Skills/deploy/nginx.svg",
+                "width": 1920,
+                "height": 1080
+            }
+        ],
+        "alt": [
+            "ec2 logo",
+            "heroku logo",
+            "nginx logo"
+        ]
+    }
+}

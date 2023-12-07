@@ -1,22 +1,13 @@
 declare interface ISkillsData {
-    language: {
-        
-    },
+    frontend: ISkillImageData
+    backend: ISkillImageData
+    deploy: ISkillImageData
+}
 
-    frontend: {
-        imageData: IImageData[],
-        alt: string[]
-    },
-
-    backend: {
-        imageData: IImageData[],
-        alt: string[]
-    },
-
-    deploy: {
-        imageData: IImageData[],
-        alt: string[]
-    }
+declare interface ISkillImageData {
+    title: string,
+    imageData: IImageData[],
+    alt: string[]
 }
 
 declare interface ILogoContainerProps {
