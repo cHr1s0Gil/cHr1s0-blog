@@ -14,7 +14,7 @@ export default function About(): JSX.Element {
     const { icon, label, content }: IAboutData = data;
 
     return (
-        <div className={styles.aboutMe}>
+        <div className={`${styles.aboutMe} aboutMe`}>
             <div className={styles.aboutContainer}>
                 <div className={styles.aboutContent}>
                     <div className={titleStyles.titleContainer}>

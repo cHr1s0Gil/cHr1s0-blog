@@ -9,7 +9,7 @@ export default function Skills(): JSX.Element {
     const { frontend, backend, deploy }: ISkillsData = data
 
     return (
-        <div className={styles.skillsContainer}>
+        <div className={`${styles.skillsContainer} skills`}>
             <div className={styles.skillsContent}>
                 <div className={styles.contentTitleContainer}>
                     <span className={styles.contentTitle}>Skills</span>

@@ -31,7 +31,7 @@ export default function Projects(): JSX.Element {
     }
 
     return (
-        <div className={styles.projects}>
+        <div className={`${styles.projects} projects`}>
             <div className={styles.projectsContainer}>
                 <div className={titleStyles.titleContainer}>
                     <span className={titleStyles.title}>Projects</span>
