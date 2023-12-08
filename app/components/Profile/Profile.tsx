@@ -18,9 +18,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faSquareInstagram, faVimeo } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
+// data
+import profileData from "data/profile.json";
+
 export default function ProfileInfo(): JSX.Element {
     const data: IProfileData = getData();
-    const { href, target, className, icon, basePath }: IProfileData = data;
+    const { name, href, target, className, icon, basePath }: IProfileData = data;
     return (
         <div className={styles.profileContainer}>
             <div className={thumbStyles.profileThumbContainer}>
@@ -38,7 +41,7 @@ export default function ProfileInfo(): JSX.Element {
             </div>
             <div className={infoStyles.profileInfoContainer}>
                 <div className={infoStyles.profileNameContainer}>
-                    <span className={infoStyles.profileName}>- name -</span>
+                    <span className={infoStyles.profileName}>- {name} -</span>
                 </div>
                 <div className={infoStyles.profileSubContainer}>
                     <span className={infoStyles.profileSub}>
@@ -62,17 +65,11 @@ export default function ProfileInfo(): JSX.Element {
 }
 
 function getData(): IProfileData {
-    const href: string[] = [
-        "https://github.com/cHr1s0326",
-        "https://velog.io/@chr1s0",
-        "https://www.instagram.com/ch_r1s0/",
-        "mailto:qudcksrlf1@gmail.com"
-    ];
-    const target: string[] = ["_blank", "_blank", "_blank", ""];
-    const className: string[] = ["githubContainer", "velogContainer", "instagramContainer", "mailContainer"];
+    const { name, href, target, className }: { name: string, href: string[], target: string[], className: string[] } = profileData;
     const icon: IconDefinition[] = [faGithub, faVimeo, faSquareInstagram, faEnvelope];
 
     const data: IProfileData = {
+        name,
         href,
         target,
         className,

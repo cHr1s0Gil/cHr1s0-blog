@@ -13,6 +13,9 @@ import titleStyles from "styles/components/Projects/ProjectsTitle.module.css";
 import navStyles from "styles/components/Projects/ProjectsNav.module.css";
 import contentStyles from "styles/components/Projects/ProjectsContent.module.css";
 
+// data
+import projectsData from "data/projects.json";
+
 export default function Projects(): JSX.Element {
     const [isOpenModal, setIsOpenModal]: [boolean, Dispatch<SetStateAction<boolean>>] = useState<boolean>(false);
     const [modalIndex, setModalIndex]: [number | null, Dispatch<SetStateAction<number | null>>] = useState<number | null>(null);
@@ -66,24 +69,8 @@ export default function Projects(): JSX.Element {
 }
 
 function getData(): IProjectsData {
-    const title: string[] = ["title", "title", "title", "title"];
-    const thumbImage: IImageData[] = [{
-        src: "static/images/home_background.jpg",
-        width: 200,
-        height: 200
-    }, {
-        src: "static/images/home_background.jpg",
-        width: 200,
-        height: 200
-    }, {
-        src: "static/images/home_background.jpg",
-        width: 200,
-        height: 200
-    }, {
-        src: "static/images/home_background.jpg",
-        width: 200,
-        height: 200
-    }];
+    const title: string[] = projectsData.title;
+    const thumbImage: IImageData[] = projectsData.thumbImage;
 
     const data: IProjectsData = {
         title,

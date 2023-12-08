@@ -9,6 +9,9 @@ import { IconDefinition, faCakeCandles, faEnvelope, faLocationDot, faPen, faPhon
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import '@fortawesome/fontawesome-svg-core/styles.css';
 
+// data
+import aboutData from "data/about.json";
+
 export default function About(): JSX.Element {
     const data: IAboutData = getData();
     const { icon, label, content }: IAboutData = data;
@@ -49,8 +52,8 @@ export default function About(): JSX.Element {
 function getData(): IAboutData {
     const icon: IconDefinition[] = [faUser, faCakeCandles, faPhone, faEnvelope, faLocationDot, faPen];
     // 나중에 추가 내용 기재
-    const label: string[] = ["label", "label", "label", "label", "label", "label"];
-    const content: string[] = ["content", "content", "content", "content", "content", "content"];
+    const label: string[] = aboutData.label;
+    const content: string[] = aboutData.content;
 
     const data: IAboutData = {
         icon,

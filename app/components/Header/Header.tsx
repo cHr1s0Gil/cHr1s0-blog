@@ -34,7 +34,7 @@ export default function Header(): JSX.Element {
         <div 
             className={styles.headerContainer}
             style={{
-                boxShadow: isScrolled ? "0 1px 0.3rem hsla(0,0%,80%,.8)" : "none",
+                boxShadow: isScrolled ? "0 1px 0.3rem hsla(0, 0%, 80%, .8)" : "none",
                 backgroundColor: isScrolled ? "white" : "transparent",
                 color: isScrolled ? "black" : "rgba(255, 255, 255, 1)"
             }}>
