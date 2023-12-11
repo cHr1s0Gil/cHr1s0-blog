@@ -5,13 +5,18 @@ import styles from "styles/components/Modal/Modal.module.css";
 import headerStyles from "styles/components/Modal/ModalHeader.module.css";
 import contentStyles from "styles/components/Modal/ModalContent.module.css";
 import ImageSlider from "./ImageSlider";
-import Description from "./Description";
 
-import { contentData } from "src/content/projects/content";
+import contentData from "data/content.json";
+import Link from "next/link";
+import dynamic from "next/dynamic";
+import { ComponentType } from "react";
+
 
 export default function Modal({ props }: { props: IModalProps }) {
     const { index, onClose }: IModalProps = props;
     const data: IModalContentData = getData(index);
+
+    const Description: ComponentType<{}> = dynamic(() => import(`components/Content/Project_${index}`), { loading: () => <p>Loading...</p> });
 
     const onModalClick = (event: React.MouseEvent<HTMLDivElement>) => {
         const modal: Element | null = document.querySelector(".modalContainer");
@@ -33,10 +38,11 @@ export default function Modal({ props }: { props: IModalProps }) {
                 </div>
                 <div className={headerStyles.subTitleContainer}>
                     <span className={headerStyles.subTitle}>{data.subTitle}</span>
+                    <Link className={headerStyles.link} href={data.href} target="_blank">{data.href}</Link>
                 </div>
                 <div className={contentStyles.modalContentContainer}>
                     <ImageSlider props={data.images}></ImageSlider>
-                    <Description props={data.description}></Description>
+                    <Description></Description>
                 </div>
             </div>
         </div>
@@ -44,6 +50,6 @@ export default function Modal({ props }: { props: IModalProps }) {
 }
 
 function getData(index: number | null): IModalContentData {
-    const data: IModalContentData = contentData[index!!];
+    const data: IModalContentData = contentData.data[index!!];
     return data;
 }

@@ -18,12 +18,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     margin-top: 1%;
 }
 
 .subTitle {
     color: gray;
     font-size: 1.2em;
+}
+
+.link {
+    color: gray;
+    font-size: 0.8em;
 }
 
 .closeBtn {

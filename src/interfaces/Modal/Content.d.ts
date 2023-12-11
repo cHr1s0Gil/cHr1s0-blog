@@ -1,11 +1,6 @@
 declare interface IModalContentData {
     title: string,
     subTitle: string,
+    href: string,
     images: IImageData[],
-    description: IDescriptionData
-}
-
-declare interface IDescriptionData {
-    main: string,
-    information: string[]
 }

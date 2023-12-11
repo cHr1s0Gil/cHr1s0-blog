@@ -1,14 +1,14 @@
 {
     "title": [
-        "title", 
-        "title", 
-        "title", 
-        "title"
+        "Palette", 
+        "LymCar", 
+        "In my Bucket", 
+        "Code-Tutor"
     ],
     "thumbImage": [{
-        "src": "static/images/home_background.jpg",
-        "width": 200,
-        "height": 200
+        "src": "static/images/Projects/1/1_3.png",
+        "width": 500,
+        "height": 500
     }, {
         "src": "static/images/home_background.jpg",
         "width": 200,
