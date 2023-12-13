@@ -5,10 +5,10 @@ export default function Project_1(): JSX.Element {
         <div className={styles.descriptionContainer}>
         <div className={styles.contentContainer}>
             <div className={styles.mainDescription}>
-                main
+                main2
             </div>
             <div className={styles.infomationContainer}>
-                information
+                information2
             </div>
         </div>
     </div>

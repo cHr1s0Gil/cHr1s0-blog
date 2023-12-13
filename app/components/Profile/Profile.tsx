@@ -9,7 +9,7 @@ import navStyles from "styles/components/Profile/ProfileNav.module.css";
 import infoStyles from "styles/components/Profile/ProfileInfo.module.css";
 
 // config
-import pathConfig from "../../../next.config";
+import pathConfig from "@/next.config";
 
 // fontawesome
 import { IconDefinition, config } from '@fortawesome/fontawesome-svg-core'

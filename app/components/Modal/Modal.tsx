@@ -18,6 +18,7 @@ export default function Modal({ props }: { props: IModalProps }) {
 
     const Description: ComponentType<{}> = dynamic(() => import(`components/Content/Project_${index}`), { loading: () => <p>Loading...</p> });
 
+    // 모달창 열고 닫는 함수
     const onModalClick = (event: React.MouseEvent<HTMLDivElement>) => {
         const modal: Element | null = document.querySelector(".modalContainer");
         
@@ -38,7 +39,7 @@ export default function Modal({ props }: { props: IModalProps }) {
                 </div>
                 <div className={headerStyles.subTitleContainer}>
                     <span className={headerStyles.subTitle}>{data.subTitle}</span>
-                    <Link className={headerStyles.link} href={data.href} target="_blank">{data.href}</Link>
+                    {/* <Link className={headerStyles.link} href={data.href} target="_blank">{data.href}</Link> */}
                 </div>
                 <div className={contentStyles.modalContentContainer}>
                     <ImageSlider props={data.images}></ImageSlider>
