@@ -4,6 +4,7 @@ import { Dispatch, SetStateAction, useEffect, useState } from "react";
 
 import styles from "styles/components/Header/Header.module.css";
 
+// 화면 스크롤 함수
 const scrollToTarget = (targetDiv: string) => {
     const target = document.querySelector("." + targetDiv);
 

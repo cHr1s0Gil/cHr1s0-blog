@@ -5,9 +5,11 @@ import About from "components/About/About";
 import Projects from "components/Projects/Projects";
 import Skills from "components/Skills/Skills";
 import Footer from "components/Footer/Footer";
+import UpButton from "components/Button/UpButton";
 
 // styles
 import styles from "styles/pages/home.module.css";
+
 
 
 export default function Home() {
@@ -19,6 +21,7 @@ export default function Home() {
       <Skills></Skills>
       <Projects></Projects>
       <Footer></Footer>
+      <UpButton></UpButton>
     </div>
   );
 }
