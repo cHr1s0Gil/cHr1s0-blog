@@ -1,6 +1,6 @@
 {
     "frontend": {
-        "title": "frontend",
+        "title": "Frontend",
         "imageData": [
             {
                 "src": "static/images/Skills/frontend/html.png",
@@ -31,7 +31,7 @@
         ]
     },
     "backend": {
-        "title": "backend",
+        "title": "Backend",
         "imageData": [
             {
                 "src": "static/images/Skills/backend/javascript.jpg",
@@ -73,8 +73,33 @@
             "postman logo"
         ]
     },
+    "database": {
+        "title": "Database",
+        "imageData": [
+            {
+                "src": "static/images/Skills/database/mysql.png",
+                "width": 1920,
+                "height": 1080
+            },
+            {
+                "src": "static/images/Skills/database/oracle.png",
+                "width": 1920,
+                "height": 1080
+            },
+            {
+                "src": "static/images/Skills/database/mongodb.svg",
+                "width": 1920,
+                "height": 1080
+            }
+        ],
+        "alt": [
+            "ec2 logo",
+            "heroku logo",
+            "nginx logo"
+        ]
+    },
     "deploy": {
-        "title": "deploy",
+        "title": "Deploy",
         "imageData": [
             {
                 "src": "static/images/Skills/deploy/aws.svg",

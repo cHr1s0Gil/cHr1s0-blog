@@ -1,6 +1,7 @@
 declare interface ISkillsData {
     frontend: ISkillImageData
     backend: ISkillImageData
+    database: ISkillImageData
     deploy: ISkillImageData
 }
 

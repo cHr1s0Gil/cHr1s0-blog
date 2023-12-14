@@ -6,7 +6,7 @@ import LogoContainer from "./LogoContainer";
 
 export default function Skills(): JSX.Element {
     const data: ISkillsData = getData();
-    const { frontend, backend, deploy }: ISkillsData = data
+    const { frontend, backend, database, deploy }: ISkillsData = data
 
     return (
         <div className={`${styles.skillsContainer} skills`}>
@@ -17,6 +17,7 @@ export default function Skills(): JSX.Element {
                 <div className={styles.skillsListContainer}>
                     <LogoContainer props={{ title: frontend.title, logoImageData: frontend.imageData, altTexts: frontend.alt }}></LogoContainer>
                     <LogoContainer props={{ title: backend.title, logoImageData: backend.imageData, altTexts: backend.alt }}></LogoContainer>
+                    <LogoContainer props={{ title: database.title, logoImageData: database.imageData, altTexts: database.alt }}></LogoContainer>
                     <LogoContainer props={{ title: deploy.title, logoImageData: deploy.imageData, altTexts: deploy.alt }}></LogoContainer>
                 </div>
             </div>
@@ -25,11 +26,12 @@ export default function Skills(): JSX.Element {
 }
 
 function getData(): ISkillsData {
-    const { frontend, backend, deploy }: ISkillsData = skillsData;
+    const { frontend, backend, database, deploy }: ISkillsData = skillsData;
 
     return {
         frontend,
         backend,
+        database,
         deploy
     }
 }
