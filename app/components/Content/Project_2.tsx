@@ -1,6 +1,6 @@
-import styles from "styles/components/Modal/Description.module.css";
+import styles from "styles/components/Content/Description.module.css";
 
-export default function Project_1(): JSX.Element {
+export default function Project_2(): JSX.Element {
     return (
         <div className={styles.descriptionContainer}>
         <div className={styles.contentContainer}>

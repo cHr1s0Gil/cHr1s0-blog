@@ -1,4 +1,4 @@
-import styles from "styles/components/Modal/Description.module.css";
+import styles from "styles/components/Content/Description.module.css";
 
 export default function Project_1(): JSX.Element {
     return (

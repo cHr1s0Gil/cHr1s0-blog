@@ -1,0 +1,14 @@
+{
+    "description": 
+    {
+        "label": ["✔ Github", "✔ Frontend", "✔ Backend", "✔ Database", "✔ Deploy"],
+        "content": [[
+            "https://github.com/cHr1s0Gil/dawn-capstone/tree/back-end",
+            "HTML5, CSS3, JavaScript, React",
+            "Node.js, express, crypto",
+            "MySQL",
+            "Amazon EC2"
+        ]]
+    }
+
+}
