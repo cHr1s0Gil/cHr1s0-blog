@@ -6,6 +6,28 @@
             "href": "https://github.com/cHr1s0326/dawn-capstone/tree/back-end",
             "images": [
                 {
+                    "src": "static/images/Projects/0/0_1.png",
+                    "width": 0,
+                    "height": 0
+                },
+                {
+                    "src": "static/images/Projects/0/0_2.png",
+                    "width": 0,
+                    "height": 0
+                },
+                {
+                    "src": "static/images/Projects/0/0_3.png",
+                    "width": 0,
+                    "height": 0
+                }
+            ]
+        },
+        {
+            "title": "LymCar",
+            "subTitle": "목적지가 같은 학생들끼리 동승자를 구하여 택시 이용을 할 수 있도록 만든 어플리케이션",
+            "href": "https://github.com/cHr1s0326/hallym-taxi-server",
+            "images": [
+                {
                     "src": "static/images/Projects/1/1_1.png",
                     "width": 0,
                     "height": 0
@@ -19,36 +41,14 @@
                     "src": "static/images/Projects/1/1_3.png",
                     "width": 0,
                     "height": 0
-                }
-            ]
-        },
-        {
-            "title": "LymCar",
-            "subTitle": "목적지가 같은 학생들끼리 동승자를 구하여 택시 이용을 할 수 있도록 만든 어플리케이션",
-            "href": "https://github.com/cHr1s0326/hallym-taxi-server",
-            "images": [
+                },
                 {
-                    "src": "static/images/test/image_6.png",
+                    "src": "static/images/Projects/1/1_4.png",
                     "width": 0,
                     "height": 0
                 },
                 {
-                    "src": "static/images/test/image_7.png",
-                    "width": 0,
-                    "height": 0
-                },
-                {
-                    "src": "static/images/test/image_8.png",
-                    "width": 0,
-                    "height": 0
-                },
-                {
-                    "src": "static/images/test/image_9.png",
-                    "width": 0,
-                    "height": 0
-                },
-                {
-                    "src": "static/images/test/image_10.png",
+                    "src": "static/images/Projects/1/1_5.png",
                     "width": 0,
                     "height": 0
                 }

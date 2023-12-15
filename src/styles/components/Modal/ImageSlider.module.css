@@ -1,7 +1,8 @@
 .sliderContainer {
-    width: 50%;
-    height: 90%;
+    width: 80%;
+    height: 120%;
     position: relative;
+    margin-top: 20vh;
 }
 
 .imageContainer {

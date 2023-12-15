@@ -7,7 +7,6 @@ import contentStyles from "styles/components/Modal/ModalContent.module.css";
 import ImageSlider from "./ImageSlider";
 
 import contentData from "data/content.json";
-import Link from "next/link";
 import dynamic from "next/dynamic";
 import { ComponentType } from "react";
 

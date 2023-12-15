@@ -6,19 +6,19 @@
         "Code-Tutor"
     ],
     "thumbImage": [{
-        "src": "static/images/Projects/1/1_3.png",
+        "src": "static/images/Projects/0/0_3.png",
         "width": 500,
         "height": 500
     }, {
-        "src": "static/images/home_background.jpg",
+        "src": "static/images/Projects/1/1_1.png",
         "width": 200,
         "height": 200
     }, {
-        "src": "static/images/home_background.jpg",
+        "src": "static/images/Projects/2/2_1.jpg",
         "width": 200,
         "height": 200
     }, {
-        "src": "static/images/home_background.jpg",
+        "src": "static/images/Projects/3/3_1.jpg",
         "width": 200,
         "height": 200
     }]

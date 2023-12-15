@@ -1,14 +1,24 @@
 {
-    "description": 
-    {
-        "label": ["✔ Github", "✔ Frontend", "✔ Backend", "✔ Database", "✔ Deploy"],
-        "content": [[
-            "https://github.com/cHr1s0Gil/dawn-capstone/tree/back-end",
-            "HTML5, CSS3, JavaScript, React",
-            "Node.js, express, crypto",
-            "MySQL",
-            "Amazon EC2"
-        ]]
+    "description": {
+        "label": [
+            "✔ Frontend",
+            "✔ Backend",
+            "✔ Database",
+            "✔ Deploy"
+        ],
+        "content": [
+            [
+                "HTML5, CSS3, JavaScript, React",
+                "Node.js, express, crypto",
+                "MySQL",
+                "Amazon EC2"
+            ],
+            [
+                "Android Studio, Flutter",
+                "Node.js, express, FCM, nodemailer",
+                "MySQL",
+                "Cafe 24"
+            ]
+        ]
     }
-
 }

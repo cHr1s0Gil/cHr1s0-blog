@@ -1,6 +1,6 @@
 
 import Image from "next/image";
-import { Dispatch, RefObject, SetStateAction, useEffect, useRef, useState } from "react";
+import { Dispatch, RefObject, SetStateAction, useRef, useState } from "react";
 
 import styles from "styles/components/Modal/ImageSlider.module.css";
 

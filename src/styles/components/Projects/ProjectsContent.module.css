@@ -4,11 +4,12 @@
     overflow: hidden;
     box-shadow: 10px 10px 15px rgba(29, 32, 3, 0.5);
     transition: transform 0.3s ease;
+    background-color: white;
 }
 
 .contentContainer:hover {
     transform: scale(1.15);
-    z-index: 1;
+    z-index: 5;
 }
 
 .contentTitle, .contentDetail {
