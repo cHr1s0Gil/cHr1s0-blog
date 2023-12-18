@@ -14,7 +14,9 @@ export default function Project_1(): JSX.Element {
                 이 방법은 게시글 형태로 작성하다 보니 다른 게시글이 등록될 때 마다 게시물이 아래로 내려가 동승자를 구하는 것이 쉽지 않았다.<br/><br/>
                 먼저 완성이 된 프로젝트였으나, 같이 프로젝트에 참여했던 인원이 빠지게 되어 이후 프로젝트를 받아 <span className={styles.mainSpan}>배포 및 유지보수</span>를 맡게 되었다.<br/><br/>
                 이 프로젝트에서는 <span className={styles.mainSpan}>node.js</span>를 통한 <span className={styles.mainSpan}>API 유지보수</span>,<span className={styles.mainSpan}> nodemailer</span> 모듈을 통해 <span className={styles.mainSpan}>메일 전송 유지보수</span>
-                <span className={styles.mainSpan}> FCM 알림</span>, <span className={styles.mainSpan}>Cafe24</span>를 통한 서버 배포 등의 작업을 진행하였다.
+                <span className={styles.mainSpan}> FCM 알림</span>, <span className={styles.mainSpan}>Cafe24</span>를 통한 서버 배포 등의 작업을 진행하였다.<br/><br/>
+                실제 배포된 서비스를 관리해본 것은 처음이기에 생길 수 있는 오류를 최대한 확인하고 테스트했었다. 그럼에도 테스트 과정에서 예상하지 못했던 오류들이 발생하였고,
+                서비스 중 오류를 수정하기도 하였다. 이를 통해서 <span className={styles.mainSpan}>프로젝트를 진행하는 것과 실제 서비스를 하는 것에는 큰 차이가 있다는 것을 알 수 있었던 경험이었다.</span>
             </div>
                 <div className={styles.informationContent}>
                     <div className={styles.label}>
