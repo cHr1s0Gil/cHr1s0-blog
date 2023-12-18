@@ -20,7 +20,6 @@ export default function Projects(): JSX.Element {
     const [isOpenModal, setIsOpenModal]: [boolean, Dispatch<SetStateAction<boolean>>] = useState<boolean>(false);
     const [modalIndex, setModalIndex]: [number | null, Dispatch<SetStateAction<number | null>>] = useState<number | null>(null);
     const data: IProjectsData = getData();
-    console.log(data);
     const { title, thumbImage }: IProjectsData = data;
 
     const openModal: (index: number) => void = (index: number) => {

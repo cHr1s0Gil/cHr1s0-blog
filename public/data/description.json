@@ -18,6 +18,12 @@
                 "Node.js, express, FCM, nodemailer",
                 "MySQL",
                 "Cafe 24"
+            ],
+            [
+                "HTML5, CSS3, JavaScript, Ajax, JQuery",
+                "Spring, JSP, Java, MyBatis",
+                "OracleDB",
+                "Apache Tomcat"
             ]
         ]
     }
