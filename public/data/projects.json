@@ -3,7 +3,8 @@
         "Palette", 
         "LymCar", 
         "In my Bucket", 
-        "Code-Tutor"
+        "Code-Tutor",
+        "Portfolio"
     ],
     "thumbImage": [{
         "src": "static/images/Projects/0/0_3.png",
@@ -15,6 +16,10 @@
         "height": 200
     }, {
         "src": "static/images/Projects/2/2_1.png",
+        "width": 200,
+        "height": 200
+    }, {
+        "src": "static/images/Projects/3/3_1.png",
         "width": 200,
         "height": 200
     }, {

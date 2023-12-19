@@ -30,6 +30,12 @@
                 "Spring Boot, JSP, Java, JDBC", "spring security",
                 "MySQL",
                 "Apache Tomcat"
+            ],
+            [
+                "HTML5, CSS3, JavaScript, React.js",
+                "Next.js",
+                "X",
+                "GitHub Pages"
             ]
         ]
     }

@@ -29,7 +29,7 @@ export default function ProfileInfo(): JSX.Element {
             <div className={thumbStyles.profileThumbContainer}>
                 <Image
                     className={thumbStyles.profileImage}
-                    src={`${basePath}/static/images/profile_image.png`}
+                    src={`${basePath}/static/images/Profile/profile.jpg`}
                     alt="프로필 이미지"
                     width={300}
                     height={300}
