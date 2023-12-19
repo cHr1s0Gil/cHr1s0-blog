@@ -24,6 +24,12 @@
                 "Spring, JSP, Java, MyBatis",
                 "OracleDB",
                 "Apache Tomcat"
+            ],
+            [
+                "HTML5, CSS3, JavaScript, CodeMirror5",
+                "Spring Boot, JSP, Java, JDBC", "spring security",
+                "MySQL",
+                "Apache Tomcat"
             ]
         ]
     }

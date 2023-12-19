@@ -97,32 +97,22 @@
             ]
         },
         {
-            "title": "4",
-            "subTitle": "4",
+            "title": "Code Tutor",
+            "subTitle": "소스코드를 공유하는 웹사이트",
             "href": "https://github.com/cHr1s0326/dawn-capstone/tree/back-end",
             "images": [
                 {
-                    "src": "static/images/test/image_16.png",
+                    "src": "static/images/Projects/3/3_1.png",
                     "width": 0,
                     "height": 0
                 },
                 {
-                    "src": "static/images/test/image_17.png",
+                    "src": "static/images/Projects/3/3_2.png",
                     "width": 0,
                     "height": 0
                 },
                 {
-                    "src": "static/images/test/image_18.png",
-                    "width": 0,
-                    "height": 0
-                },
-                {
-                    "src": "static/images/test/image_19.png",
-                    "width": 0,
-                    "height": 0
-                },
-                {
-                    "src": "static/images/test/image_20.png",
+                    "src": "static/images/Projects/3/3_3.png",
                     "width": 0,
                     "height": 0
                 }
