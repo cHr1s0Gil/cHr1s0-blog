@@ -16,7 +16,6 @@
     from {
         opacity: 0;
     }
-
     to {
         opacity: 1;
     }
@@ -27,7 +26,7 @@
     width: 60%;
     height: 90%;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     overflow-y: scroll;
     z-index: 2;

@@ -3,7 +3,6 @@
         {
             "title": "Palette",
             "subTitle": "사용자를 위한 아바타를 생성하여 옷을 미리 입어 볼 수 있는 쇼핑몰 구현",
-            "href": "https://github.com/cHr1s0326/dawn-capstone/tree/back-end",
             "images": [
                 {
                     "src": "static/images/Projects/0/0_1.png",
@@ -25,7 +24,6 @@
         {
             "title": "LymCar",
             "subTitle": "목적지가 같은 학생들끼리 동승자를 구하여 택시 이용을 할 수 있도록 만든 어플리케이션",
-            "href": "https://github.com/cHr1s0326/hallym-taxi-server",
             "images": [
                 {
                     "src": "static/images/Projects/1/1_1.png",
@@ -57,7 +55,6 @@
         {
             "title": "In my bucket",
             "subTitle": "버킷리스트를 기록하고 공유하고, 모임 기능을 제공하는 소셜 웹 서비스",
-            "href": "https://github.com/cHr1s0326/dawn-capstone/tree/back-end",
             "images": [
                 {
                     "src": "static/images/Projects/2/2_1.png",
@@ -99,7 +96,6 @@
         {
             "title": "Code Tutor",
             "subTitle": "소스코드를 공유하는 웹사이트",
-            "href": "https://github.com/cHr1s0326/dawn-capstone/tree/back-end",
             "images": [
                 {
                     "src": "static/images/Projects/3/3_1.png",
@@ -119,32 +115,11 @@
             ]
         },
         {
-            "title": "5",
-            "subTitle": "5",
-            "href": "https://github.com/cHr1s0326/dawn-capstone/tree/back-end",
+            "title": "Portfolio",
+            "subTitle": "포트폴리오 웹사이트",
             "images": [
                 {
-                    "src": "static/images/test/image_21.png",
-                    "width": 0,
-                    "height": 0
-                },
-                {
-                    "src": "static/images/test/image_22.png",
-                    "width": 0,
-                    "height": 0
-                },
-                {
-                    "src": "static/images/test/image_23.png",
-                    "width": 0,
-                    "height": 0
-                },
-                {
-                    "src": "static/images/test/image_24.png",
-                    "width": 0,
-                    "height": 0
-                },
-                {
-                    "src": "static/images/test/image_25.png",
+                    "src": "static/images/Projects/4/4_1.png",
                     "width": 0,
                     "height": 0
                 }
