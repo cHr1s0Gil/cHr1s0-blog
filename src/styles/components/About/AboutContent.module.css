@@ -1,6 +1,6 @@
 .aboutNavContent {
     display: flex;
-    background-color: #FFB701;
+    background-color: rgba(255, 233, 4, 0.4);
     border-radius: 15px;
 }
 

@@ -1,4 +1,5 @@
 .contentContainer {
+    height: 25em;
     border: 1px black solid;
     border-radius: 25px;
     overflow: hidden;
@@ -24,10 +25,12 @@
 
 .contentTitle {
     border-bottom: 1px black solid;
+    background-color: rgb(254, 247, 158);
 }
 
 .contentDetail {
     border-top: 1px black solid;
+    background-color: rgb(215, 229, 241);
 }
 
 .contentDetail:hover {
